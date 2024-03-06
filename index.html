@@ -1,81 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <script src="https://unpkg.com/vue@3"></script>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
   </head>
-  <style>
-    section.inprogress {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 100vh;
-    }
-    .progress-files {
-      display: flex;
-    }
-    .progress-files p {
-      font-weight: 800;
-    }
-  </style>
   <body>
-    <div id="app">
-      <section class="inprogress">
-        <div class="wrapper" v-show="activeLanguage.length">
-          <h1>Languages Active</h1>
-          <div
-            class="progress-files"
-            v-for="language in languages.filter(l => l.active)"
-            :key="language.id"
-          >
-            <p>{{language.name}}</p>
-            <input type="checkbox" v-model="language.active" />
-          </div>
-        </div>
-
-        <div class="wrapper" v-show="inActiveLanguage.length">
-          <h1>Languages Inactive</h1>
-          <div
-            class="progress-files"
-            v-for="language in languages.filter(l => ! l.active)"
-            :key="language.id"
-          >
-            <p>{{language.name}}</p>
-            <input type="checkbox" v-model="language.active" />
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <script>
-      Vue.createApp({
-        data() {
-          return {
-            languages: [
-              { id: 1, name: "PHP", active: false },
-              { id: 2, name: "Javascript", active: false },
-              { id: 3, name: "Go", active: false },
-            ],
-          };
-        },
-        computed: {
-          activeLanguage() {
-            return this.languages.filter((l) => l.active);
-          },
-          inActiveLanguage() {
-            return this.languages.filter((l) => !l.active);
-          },
-        },
-        mounted() {
-          // This will load before this component render.
-          // alert(this.inActiveLanguage);
-        },
-      }).mount("#app");
-    </script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
