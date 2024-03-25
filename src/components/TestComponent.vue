@@ -1,7 +1,9 @@
-<script></script>
+<script>
+import Image from './../assets/img/1.png'
+</script>
 
 <template>
-  <main class=" ">
+  <main class="">
     <div class="grid grid-cols-6 gap-4">
       <!-- column 01 -->
       <div class="bg-gray-200 py-10">
@@ -18,7 +20,7 @@
       </div>
 
       <!-- column 02 -->
-      <div class="border col-span-5 py-10 px-10">
+      <div class="col-span-5 py-10 px-10 space-y-10">
         <!-- Header section -->
         <div class="header-section flex flex-row justify-between">
           <div class="add-button">
@@ -44,6 +46,40 @@
         </div>
 
         <!-- Body section -->
+        <section class="body-section">
+          <div class="relative overflow-x-auto rounded-lg">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+              <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+                <tr>
+                  <th scope="col" class="px-6 py-3">Name</th>
+                  <th scope="col" class="px-6 py-3">Email</th>
+                  <th scope="col" class="px-6 py-3">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-gray-200 border-b gap-x-2">
+                  <td class="px-6 py-4 font-medium text-gray-900 flex items-center gap-3">
+                    <img
+                      src="https://img.freepik.com/premium-photo/women-business-outfit-photo_745528-39608.jpg"
+                      alt=""
+                      class="w-10 h-10 rounded-lg"
+                    />
+                    <h3 class="text-2xl font-bold">Name</h3>
+                  </td>
+                  <td class="px-6 py-4 font-medium text-xl">hello@gmail.com</td>
+                  <td class="px-6 py-4 text-green-500 font-medium text-xl">
+                    <a href="">Active</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="footer bg-gray-100 p-3 text-center font-bold text-xl">
+          <h3>Semily - 5 Member Team</h3>
+        </section>
       </div>
     </div>
   </main>
