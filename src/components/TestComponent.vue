@@ -1,5 +1,5 @@
-<script>
-import Image from './../assets/img/1.png'
+<script setup>
+import TeamMember from '@/components/Teams/TeamMember.vue'
 </script>
 
 <template>
@@ -57,7 +57,8 @@ import Image from './../assets/img/1.png'
                 </tr>
               </thead>
               <tbody>
-                <tr class="bg-gray-200 border-b gap-x-2">
+                <TeamMember name="Nahian" email="nahi@gmail.com" status="Active" />
+                <!-- <tr class="bg-gray-200 border-b gap-x-2">
                   <td class="px-6 py-4 font-medium text-gray-900 flex items-center gap-3">
                     <img
                       src="https://img.freepik.com/premium-photo/women-business-outfit-photo_745528-39608.jpg"
@@ -67,12 +68,13 @@ import Image from './../assets/img/1.png'
                     <h3 class="text-2xl font-bold">Name</h3>
                   </td>
                   <td class="px-6 py-4 font-medium text-xl">hello@gmail.com</td>
-                  <td class="px-6 py-4 text-green-500 font-medium text-xl">
+                  <td class="px-6 py-4 text-green-500 font-medium text-sm">
                     <a href="">Active</a>
                   </td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
+            <p class="text-right text-xl font-medium">Extra text</p>
           </div>
         </section>
 
