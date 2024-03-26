@@ -4,13 +4,15 @@ import TeamMember from '@/components/Teams/TeamMember.vue'
 
 <template>
   <main class="">
-    <div class="grid grid-cols-6 gap-4">
+    <div class="grid grid-cols-6 gap-4 h-screen">
       <!-- column 01 -->
       <div class="bg-gray-200 py-10">
         <h3 class="text-gray-500 font-bold text-xl text-center md:text-4xl md:font-mediumn">
           Demo
         </h3>
         <div class="box my-10 space-y-5">
+          <div class="box-item w-16 h-16 bg-gray-300 mx-auto rounded-lg"></div>
+          <div class="box-item w-16 h-16 bg-gray-300 mx-auto rounded-lg"></div>
           <div class="box-item w-16 h-16 bg-gray-300 mx-auto rounded-lg"></div>
           <div class="box-item w-16 h-16 bg-gray-300 mx-auto rounded-lg"></div>
           <div class="box-item w-16 h-16 bg-gray-300 mx-auto rounded-lg"></div>
@@ -24,7 +26,7 @@ import TeamMember from '@/components/Teams/TeamMember.vue'
         <!-- Header section -->
         <div class="header-section flex flex-row justify-between">
           <div class="add-button">
-            <button class="bg-gray-500 px-5 py-3 rounded-lg text-white">
+            <button class="bg-gray-500 px-5 py-3 rounded-lg text-white font-medium">
               Add Member (0 Sports Left)
             </button>
           </div>
@@ -35,7 +37,7 @@ import TeamMember from '@/components/Teams/TeamMember.vue'
               class="w-6 h-6"
             />
             <div class="team-title-with-number relative pr-5">
-              <h3 class="text-xl font-medium text-gray-400">Team member</h3>
+              <h3 class="text-xl font-medium text-gray-600">Smiley Team</h3>
               <div
                 class="flex justify-center items-center w-6 h-6 bg-green-500 rounded-full absolute bottom-5 right-0"
               >
@@ -58,20 +60,6 @@ import TeamMember from '@/components/Teams/TeamMember.vue'
               </thead>
               <tbody>
                 <TeamMember name="Nahian" email="nahi@gmail.com" status="Active" />
-                <!-- <tr class="bg-gray-200 border-b gap-x-2">
-                  <td class="px-6 py-4 font-medium text-gray-900 flex items-center gap-3">
-                    <img
-                      src="https://img.freepik.com/premium-photo/women-business-outfit-photo_745528-39608.jpg"
-                      alt=""
-                      class="w-10 h-10 rounded-lg"
-                    />
-                    <h3 class="text-2xl font-bold">Name</h3>
-                  </td>
-                  <td class="px-6 py-4 font-medium text-xl">hello@gmail.com</td>
-                  <td class="px-6 py-4 text-green-500 font-medium text-sm">
-                    <a href="">Active</a>
-                  </td>
-                </tr> -->
               </tbody>
             </table>
             <p class="text-right text-xl font-medium">Extra text</p>
@@ -80,7 +68,7 @@ import TeamMember from '@/components/Teams/TeamMember.vue'
 
         <!-- Footer Section -->
         <section class="footer bg-gray-100 p-3 text-center font-bold text-xl">
-          <h3>Semily - 5 Member Team</h3>
+          <h3>Smiley - 5 Member Team</h3>
         </section>
       </div>
     </div>

@@ -17,7 +17,7 @@ defineProps({
       <h3 class="text-2xl font-bold">{{ name }}</h3>
     </td>
     <td class="px-6 py-4 font-medium text-xl">{{ email }}</td>
-    <td class="px-6 py-4 text-green-500 font-medium text-sm">
+    <td class="px-6 py-4 text-green-500 font-bold text-lg">
       <a href="">{{ status }}</a>
     </td>
   </tr>
