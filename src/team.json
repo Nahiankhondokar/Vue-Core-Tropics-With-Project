@@ -1,0 +1,24 @@
+{
+  "name": "Smiley ",
+  "sports": 5,
+  "members": [
+    {
+      "name": "Nahian",
+      "email": "nahian@gmail.com",
+      "image": "https://www.ultimatebeaver.com/wp-content/uploads/2021/04/photo-gallery-img-02.jpg",
+      "status": "Active"
+    },
+    {
+      "name": "Misu",
+      "email": "misu@gmail.com",
+      "image": "https://www.cbs.co.ls/wp-content/uploads/2019/03/6-2.jpg",
+      "status": "Active"
+    },
+    {
+      "name": "Farid",
+      "email": "farid@gmail.com",
+      "image": "https://valleygraphics.ca/wp-content/uploads/2015/01/team-member-04.jpg",
+      "status": "Active"
+    }
+  ]
+}

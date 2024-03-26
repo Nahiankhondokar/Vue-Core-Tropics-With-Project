@@ -1,0 +1,30 @@
+<script setup>
+import TeamJson from '@/team.json'
+import TeamHeader from '@/components/Teams/TeamHeader.vue'
+import TeamMembers from '@/components/Teams/TeamMembers.vue'
+import TeamFooter from '@/components/Teams/TeamFooter.vue'
+import Sidebar from '@/components/Sidebar/Sidebar.vue'
+</script>
+
+<template>
+  <main class="">
+    <div class="grid grid-cols-6 gap-4 h-screen">
+      <!-- column 01 -->
+      <Sidebar />
+
+      <!-- column 02 -->
+      <div class="col-span-5 py-10 px-10 space-y-10">
+        <!-- Header section -->
+        <TeamHeader :TeamJson="TeamJson" />
+
+        <!-- Body section -->
+        <TeamMembers :TeamJson="TeamJson" />
+
+        <!-- Footer Section -->
+        <TeamFooter :TeamJson="TeamJson" />
+      </div>
+    </div>
+  </main>
+</template>
+
+<style></style>

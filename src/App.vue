@@ -1,9 +1,9 @@
 <script setup>
-import TestView from './views/TestView.vue'
+import MainView from './views/MainView.vue'
 </script>
 
 <template>
-  <TestView />
+  <MainView />
 </template>
 
 <style scoped></style>
