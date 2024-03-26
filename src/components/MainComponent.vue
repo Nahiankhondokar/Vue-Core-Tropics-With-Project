@@ -1,9 +1,13 @@
 <script setup>
-import TeamJson from '@/team.json'
+// import TeamJson from '@/team.json'
 import TeamHeader from '@/components/Teams/TeamHeader.vue'
 import TeamMembers from '@/components/Teams/TeamMembers.vue'
 import TeamFooter from '@/components/Teams/TeamFooter.vue'
 import Sidebar from '@/components/Sidebar/Sidebar.vue'
+import { useTeamStore } from '@/Stores/TeamStore.js'
+
+let TeamJson = useTeamStore()
+TeamJson.fill()
 </script>
 
 <template>
@@ -28,3 +32,4 @@ import Sidebar from '@/components/Sidebar/Sidebar.vue'
 </template>
 
 <style></style>
+@/Stores/TeamStore.js

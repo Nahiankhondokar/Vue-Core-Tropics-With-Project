@@ -1,9 +1,8 @@
 <script setup>
 import TeamMember from '@/components/Teams/TeamMember.vue'
-import TeamJson from '@/team.json'
 
 defineProps({
-  TeamJson
+  TeamJson: Object
 })
 </script>
 
