@@ -1,18 +1,14 @@
 <script setup>
-defineProps({
-  TeamJson: Object
-})
+import { useTeamStore } from '@/Stores/TeamStore.js'
+import AddMemberModal from '@/components/Teams/AddMemberModal.vue'
+
+let TeamJson = useTeamStore()
 </script>
 
 <template>
   <div class="header-section flex flex-row justify-between">
     <div class="add-button">
-      <button
-        class="bg-green-500 px-5 py-3 rounded-lg text-white font-medium disabled:bg-gray-500"
-        :disabled="TeamJson.members.length === TeamJson.sports"
-      >
-        Add Member ({{ TeamJson.sports - TeamJson.members.length }} Sports Left)
-      </button>
+      <AddMemberModal />
     </div>
     <div class="team-count flex gap-1 flex-row justify-center items-center">
       <img

@@ -1,7 +1,7 @@
 <script setup>
-defineProps({
-  TeamJson: Object
-})
+import { useTeamStore } from '@/Stores/TeamStore.js'
+
+let TeamJson = useTeamStore()
 </script>
 
 <template>

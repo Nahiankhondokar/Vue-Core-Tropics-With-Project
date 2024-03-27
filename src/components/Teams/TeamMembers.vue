@@ -1,9 +1,8 @@
 <script setup>
 import TeamMember from '@/components/Teams/TeamMember.vue'
+import { useTeamStore } from '@/Stores/TeamStore.js'
 
-defineProps({
-  TeamJson: Object
-})
+let TeamJson = useTeamStore()
 </script>
 
 <template>
@@ -28,12 +27,7 @@ defineProps({
           />
         </tbody>
       </table>
-      <p
-        class="text-right text-xl font-medium"
-        v-show="TeamJson.members.length === TeamJson.sports"
-      >
-        Extra text
-      </p>
+      <p class="text-right text-xl font-medium" v-show="!TeamJson.remainSports">Extra text</p>
     </div>
   </section>
 </template>

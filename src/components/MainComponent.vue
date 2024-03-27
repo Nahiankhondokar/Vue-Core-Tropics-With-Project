@@ -1,10 +1,11 @@
 <script setup>
-// import TeamJson from '@/team.json'
 import TeamHeader from '@/components/Teams/TeamHeader.vue'
 import TeamMembers from '@/components/Teams/TeamMembers.vue'
 import TeamFooter from '@/components/Teams/TeamFooter.vue'
 import Sidebar from '@/components/Sidebar/Sidebar.vue'
+import Modal from '@/components/Modal.vue'
 import { useTeamStore } from '@/Stores/TeamStore.js'
+import { ref } from 'vue'
 
 let TeamJson = useTeamStore()
 TeamJson.fill()
@@ -19,17 +20,16 @@ TeamJson.fill()
       <!-- column 02 -->
       <div class="col-span-5 py-10 px-10 space-y-10">
         <!-- Header section -->
-        <TeamHeader :TeamJson="TeamJson" />
+        <TeamHeader />
 
         <!-- Body section -->
-        <TeamMembers :TeamJson="TeamJson" />
+        <TeamMembers />
 
         <!-- Footer Section -->
-        <TeamFooter :TeamJson="TeamJson" />
+        <TeamFooter />
       </div>
     </div>
   </main>
 </template>
 
 <style></style>
-@/Stores/TeamStore.js
